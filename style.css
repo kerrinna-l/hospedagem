@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+h2{
+    color: #565656;
+    font-size: 24px;
+}
+
+.site-header {
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+body {
+    background: #DDDDDD;
+    padding: 20px;
+}
+
+.site-title {
+    background: #565656;
+    padding: 35px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.main-navigation {
+    background: #565656;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0px 30px;
+    transition: border 0.2s;
+}
+
+.content {
+    background: white;
+    margin: 0px 10px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.site-footer {
+    background: #565656;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 24px;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-image {
+    width: 300px;
+    height: 220px;
+    border-radius: 8px;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 480px) {
+    .gallery-image {
+        width: 260px;
+        height: 160px;
+    }
+    .nav-link {
+        margin: 0px 10px;
+    }
+}
+
+.container-login{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.content-login {
+    margin: 104px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: white;
+    max-width: 420px;
+    width: 100%;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-login input{
+    padding: 8px;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+}
+
+.form-login button{
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #565656;
+    color: white;
+    font-weight: 600;
+}
+
+.header-index{
+    width: 100%;
+}
+
+.white-body{
+    background-color: white;
+}
+
+.container-index{
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
