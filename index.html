@@ -1,71 +1,170 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Home</title>
+    <title>Quiz sobre Novelas Literárias</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+        }
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            text-align: center;
+        }
+        h1 {
+            color: #ffcc00;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .question {
+            margin: 20px 0;
+            padding: 15px;
+            border-left: 5px solid #ffcc00;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            text-align: left;
+        }
+        .question p {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        input {
+            margin: 10px 0;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 1.2em;
+            background: #ffcc00;
+            color: #000;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #ff9900;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+    </style>
 </head>
+<body>
 
-<body class="white-body">
-    <header class="site-header header-index">
-        <h1 class="site-title">Clínica ABC Health</h1>
-        <nav class="main-navigation">
-            <a href="/index.html" class="nav-link">Home</a>
-            <a href="/galeria.html" class="nav-link">Galeria</a>
-            <a href="/login.html" class="nav-link">Login</a>
-        </nav>
-    </header>
+<div class="container">
+    <h1>Quiz sobre Novelas Literárias</h1>
+
+    <div class="question">
+        <p>1. Qual das opções abaixo define melhor o que é uma novela?</p>
+        <input type="radio" name="q1" value="a"> a) Uma narrativa curta com poucos personagens.<br>
+        <input type="radio" name="q1" value="b"> b) Uma narrativa em prosa com foco em um único evento ou conflito.<br>
+        <input type="radio" name="q1" value="c"> c) Uma obra extensa com várias tramas paralelas.<br>
+        <input type="radio" name="q1" value="d"> d) Um gênero baseado em histórias reais e documentais.<br>
+    </div>
 
 
-    <main class="container-index">
+    <div class="question">
+        <p>2. Qual das características NÃO pertence à novela?</p>
+        <input type="radio" name="q2" value="a"> a) Tamanho intermediário.<br>
+        <input type="radio" name="q2" value="b"> b) Ritmo direto.<br>
+        <input type="radio" name="q2" value="c"> c) Foco em múltiplas tramas complexas.<br>
+        <input type="radio" name="q2" value="d"> d) Ação como prioridade.<br>
+    </div>
 
-        <div class="bloco">
-            <h2>Bem vindo à Clínica ABC Health</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu nibh in libero imperdiet
-                dapibus.
-                Praesent quis interdum urna, in feugiat orci. Sed tristique diam ac nisi faucibus, in dapibus magna
-                consectetur. Proin faucibus, mi at laoreet hendrerit, mauris ante convallis massa, et posuere sapien
-                quam
-                non quam. Curabitur sollicitudin tempus ligula ut finibus. Class aptent taciti sociosqu ad litora
-                torquent
-                per conubia nostra, per inceptos himenaeos. Praesent gravida ante magna, eget porttitor urna tristique
-                eu.
-                Proin tempor libero vel fringilla eleifend. Aenean id ligula risus. Maecenas vel mauris eu justo
-                pellentesque faucibus. Sed accumsan porta mi, nec condimentum magna sollicitudin ut. Quisque eu risus
-                suscipit, ullamcorper risus euismod, ultrices ligula. Aenean eget neque a ligula interdum ullamcorper.
-                Nullam ullamcorper maximus lacus sit amet viverra. <br>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi eos molestias minus in corrupti
-                aliquid,
-                voluptas, alias iure, nobis earum quaerat ad! Nostrum repellendus in magnam dolores earum sed soluta?
-            </p>
-        </div>
 
-        <div class="bloco">
-            <h2>Nossa Missão</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu nibh in libero imperdiet
-                dapibus.
-                Praesent quis interdum urna, in feugiat orci. Sed tristique diam ac nisi faucibus, in dapibus magna
-                consectetur. Proin faucibus, mi at laoreet hendrerit, mauris ante convallis massa, et posuere sapien
-                quam
-                non quam. Curabitur sollicitudin tempus ligula ut finibus. Class aptent taciti sociosqu ad litora
-                torquent
-                per conubia nostra, per inceptos himenaeos. Praesent gravida ante magna, eget porttitor urna tristique
-                eu.
-                Proin tempor libero vel fringilla eleifend. Aenean id ligula risus. Maecenas vel mauris eu justo
-                pellentesque faucibus. Sed accumsan porta mi, nec condimentum magna sollicitudin ut. Quisque eu risus
-                suscipit, ullamcorper risus euismod, ultrices ligula. Aenean eget neque a ligula interdum ullamcorper.
-                Nullam ullamcorper maximus lacus sit amet viverra.
+    <div class="question">
+        <p>3. Qual dessas obras é considerada uma novela?</p>
+        <input type="radio" name="q3" value="a"> a) Dom Quixote, de Miguel de Cervantes.<br>
+        <input type="radio" name="q3" value="b"> b) O Alienista, de Machado de Assis.<br>
+        <input type="radio" name="q3" value="c"> c) Guerra e Paz, de Liev Tolstói.<br>
+        <input type="radio" name="q3" value="d"> d) Os Miseráveis, de Victor Hugo.<br>
+    </div>
 
-            </p>
-        </div>
-    </main>
 
-    <footer class="site-footer">
-        <i>Av. João Naves Ávila, Santa Mônica, Uberlândia</i>
-    </footer>
+    <div class="question">
+        <p>4. Sobre a diferença entre novela e romance, é correto afirmar que:</p>
+        <input type="radio" name="q4" value="a"> a) A novela tem várias tramas secundárias e maior detalhamento.<br>
+        <input type="radio" name="q4" value="b"> b) A novela é mais curta e foca em um único conflito.<br>
+        <input type="radio" name="q4" value="c"> c) O romance sempre tem um ritmo mais rápido que a novela.<br>
+        <input type="radio" name="q4" value="d"> d) A novela apresenta vários protagonistas em diversas situações.<br>
+    </div>
+
+
+    <div class="question">
+        <p>5. Qual é um dos principais exemplos de novela citados no documento?</p>
+        <input type="radio" name="q5" value="a"> a) A metamorfose, de Franz Kafka.<br>
+        <input type="radio" name="q5" value="b"> b) O Senhor dos Anéis, de J.R.R. Tolkien.<br>
+        <input type="radio" name="q5" value="c"> c) Orgulho e Preconceito, de Jane Austen.<br>
+        <input type="radio" name="q5" value="d"> d) Cem Anos de Solidão, de Gabriel García Márquez.<br>
+    </div>
+
+
+    <div class="question">
+        <p>6. Qual destas afirmativas sobre a novela é verdadeira?</p>
+        <input type="radio" name="q6" value="a"> a) A novela sempre apresenta múltiplos pontos de vista.<br>
+        <input type="radio" name="q6" value="b"> b) A novela se foca em um único evento ou conflito central.<br>
+        <input type="radio" name="q6" value="c"> c) O romance é mais curto que a novela.<br>
+        <input type="radio" name="q6" value="d"> d) A novela não possui personagens fixos.<br>
+    </div>
+
+
+
+
+    <button onclick="calcularResultado()">Verificar Respostas</button>
+
+    <div class="result" id="resultado"></div>
+</div>
+
+<script>
+    function calcularResultado() {
+        let respostasCorretas = {
+            q1: 'b',
+            q2: 'c',
+            q3: 'b',
+            q4: 'b',
+            q5: 'a',
+            q6: 'b'
+        };
+
+        let pontos = 0;
+        
+        for (let questao in respostasCorretas) {
+            let respostaSelecionada = document.querySelector('input[name="' + questao + '"]:checked');
+            if (respostaSelecionada && respostaSelecionada.value === respostasCorretas[questao]) {
+                pontos++;
+            }
+        }
+
+        let mensagem = "";
+        if (pontos === 6) {
+            mensagem = "Parabéns! Você acertou todas as perguntas e é um especialista em novelas!";
+        } else if (pontos >= 4) {
+            mensagem = "Muito bom! Você acertou " + pontos + " de 6 perguntas.";
+        } else if (pontos >= 2) {
+            mensagem = "Você acertou " + pontos + " de 6 perguntas. Continue estudando!";
+        } else {
+            mensagem = "Você não acertou nenhuma. Hora de revisar o material!";
+        }
+
+        document.getElementById("resultado").innerText = mensagem;
+    }
+</script>
+
 </body>
-
 </html>
