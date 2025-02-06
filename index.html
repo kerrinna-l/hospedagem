@@ -1,192 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz sobre Novelas Literárias</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: #fff;
-            text-align: center;
-        }
-        .container {
-            max-width: 700px;
-            margin: 50px auto;
-            padding: 30px;
-            background: rgba(0, 0, 0, 0.8);
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-            border-radius: 15px;
-        }
-        h1 {
-            color: #ffcc00;
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        .question {
-            margin: 20px 0;
-            padding: 15px;
-            border-left: 5px solid #ffcc00;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            text-align: left;
-        }
-        .question p {
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-        input {
-            margin: 10px 0;
-        }
-        button {
-            width: 100%;
-            padding: 15px;
-            font-size: 1.2em;
-            background: #ffcc00;
-            color: #000;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: 0.3s ease;
-            font-weight: bold;
-        }
-        button:hover {
-            background: #ff9900;
-        }
-        .result {
-            margin-top: 20px;
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #ffcc00;
-        }
-        @media (max-width: 768px) {
-            .container {
-                width: 90%;
-                margin: 20px auto;
-                padding: 20px;
-            }
-            h1 {
-                font-size: 1.8em;
-            }
-            button {
-                font-size: 1em;
-            }
-        }
-    </style>
+    <title>TROCA DE CAMISETA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-
-<div class="container" id="quizContainer">
-    <h1>Quiz sobre Novelas Literárias</h1>
-
-    <div class="question">
-        <p>1. Qual das opções abaixo define melhor o que é uma novela?</p>
-        <input type="radio" name="q1" value="a"> a) Uma narrativa curta com poucos personagens.<br>
-        <input type="radio" name="q1" value="b"> b) Uma narrativa em prosa com foco em um único evento ou conflito.<br>
-        <input type="radio" name="q1" value="c"> c) Uma obra extensa com várias tramas paralelas.<br>
-        <input type="radio" name="q1" value="d"> d) Um gênero baseado em histórias reais e documentais.<br>
+    <div class="container">
+        <h1>ESCOLHA SUA CAMISETA!</h1>
+        <img src="camiseta1.jpg" id="camiseta" alt="camiseta" class="camiseta" onmouseover="trocarImagem()"
+            onmouseout="voltarImagem()">
     </div>
 
-
-
-
-    <div class="question">
-        <p>2. Qual das características NÃO pertence à novela?</p>
-        <input type="radio" name="q2" value="a"> a) Tamanho intermediário.<br>
-        <input type="radio" name="q2" value="b"> b) Ritmo direto.<br>
-        <input type="radio" name="q2" value="c"> c) Foco em múltiplas tramas complexas.<br>
-        <input type="radio" name="q2" value="d"> d) Ação como prioridade.<br>
-    </div>
-
-
-
-
-    <div class="question">
-        <p>3. Qual dessas obras é considerada uma novela?</p>
-        <input type="radio" name="q3" value="a"> a) Dom Quixote, de Miguel de Cervantes.<br>
-        <input type="radio" name="q3" value="b"> b) O Alienista, de Machado de Assis.<br>
-        <input type="radio" name="q3" value="c"> c) Guerra e Paz, de Liev Tolstói.<br>
-        <input type="radio" name="q3" value="d"> d) Os Miseráveis, de Victor Hugo.<br>
-    </div>
-
-
-
-
-    <div class="question">
-        <p>4. Sobre a diferença entre novela e romance, é correto afirmar que:</p>
-        <input type="radio" name="q4" value="a"> a) A novela tem várias tramas secundárias e maior detalhamento.<br>
-        <input type="radio" name="q4" value="b"> b) A novela é mais curta e foca em um único conflito.<br>
-        <input type="radio" name="q4" value="c"> c) O romance sempre tem um ritmo mais rápido que a novela.<br>
-        <input type="radio" name="q4" value="d"> d) A novela apresenta vários protagonistas em diversas situações.<br>
-    </div>
-
-
-
-
-    <div class="question">
-        <p>5. Qual é um dos principais exemplos de novela citados no documento?</p>
-        <input type="radio" name="q5" value="a"> a) O Senhor dos Anéis, de J.R.R. Tolkien.<br>
-        <input type="radio" name="q5" value="b"> b) A metamorfose, de Franz Kafka.<br>
-        <input type="radio" name="q5" value="c"> c) Orgulho e Preconceito, de Jane Austen.<br>
-        <input type="radio" name="q5" value="d"> d) Cem Anos de Solidão, de Gabriel García Márquez.<br>
-    </div>
-
-
-
-
-    <div class="question">
-        <p>6. Qual destas afirmativas sobre a novela é verdadeira?</p>
-        <input type="radio" name="q6" value="a"> a) A novela sempre apresenta múltiplos pontos de vista.<br>
-        <input type="radio" name="q6" value="b"> b) A novela se foca em um único evento ou conflito central.<br>
-        <input type="radio" name="q6" value="c"> c) O romance é mais curto que a novela.<br>
-        <input type="radio" name="q6" value="d"> d) A novela não possui personagens fixos.<br>
-    </div>
-
-
-
-    <button onclick="calcularResultado()">Verificar Respostas</button>
-    <div class="result" id="resultado"></div>
-</div>
-
-<script>
-    function calcularResultado() {
-        let respostasCorretas = {
-            q1: 'b',
-            q2: 'c',
-            q3: 'b',
-            q4: 'b',
-            q5: 'b',
-            q6: 'b'
-        };
-
-        let pontos = 0;
-        
-        for (let questao in respostasCorretas) {
-            let respostaSelecionada = document.querySelector('input[name="' + questao + '"]:checked');
-            if (respostaSelecionada && respostaSelecionada.value === respostasCorretas[questao]) {
-                pontos++;
-            }
-        }
-
-        let mensagem = "";
-        if (pontos === 6) {
-            mensagem = "Parabéns! Você acertou todas as perguntas e é um especialista em novelas!";
-        } else if (pontos >= 4) {
-            mensagem = "Muito bom! Você acertou " + pontos + " de 6 perguntas.";
-        } else if (pontos <= 2) {
-            mensagem = "Você acertou " + pontos + " de 6 perguntas. Continue estudando!";
-        } else {
-            mensagem = "Você não acertou nenhuma. Hora de revisar o material!";
-        }
-
-
-        document.getElementById("resultado").innerText = mensagem;
-    }
-</script>
-
+    <script src="script.js"></script>
 </body>
-</html>
 
+</html>
